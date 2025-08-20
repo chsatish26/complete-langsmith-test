@@ -39,10 +39,10 @@ def create_deployment_files():
     # Create langgraph.json
     config = {
         "dependencies": [
-            "langchain>=0.1.0",
-            "langgraph>=0.0.40", 
-            "langsmith>=0.1.0",
-            "langchain-openai>=0.1.0"
+            "langchain",
+            "langgraph", 
+            "langsmith",
+            "langchain-openai"
         ],
         "graphs": {
             "langsmith_evaluation": "./langsmith_evaluation_graph.py:create_evaluation_graph"
@@ -61,10 +61,10 @@ def create_deployment_files():
     
     # Create requirements.txt
     requirements = [
-        "langchain>=0.1.0",
-        "langgraph>=0.0.40",
-        "langsmith>=0.1.0", 
-        "langchain-openai>=0.1.0"
+        "langchain",
+        "langgraph",
+        "langsmith", 
+        "langchain-openai"
     ]
     
     with open("requirements.txt", "w") as f:
@@ -158,4 +158,5 @@ def main():
 
 if __name__ == "__main__":
     success = main()
+
     sys.exit(0 if success else 1)
