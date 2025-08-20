@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "langchain>=0.1.0",
+    "langgraph>=0.0.40",
+    "langsmith>=0.1.0",
+    "langchain-openai>=0.1.0"
+  ],
+  "graphs": {
+    "langsmith_evaluation": "./langsmith_evaluation_graph.py:create_evaluation_graph"
+  },
+  "env": [
+    "OPENAI_API_KEY",
+    "LANGCHAIN_API_KEY",
+    "LANGCHAIN_TRACING_V2",
+    "LANGCHAIN_PROJECT"
+  ]
+}
