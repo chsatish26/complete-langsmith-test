@@ -1,9 +1,10 @@
 {
   "dependencies": [
-    "langchain",
-    "langgraph",
-    "langsmith",
-    "langchain-openai"
+    "langchain>=0.1.0",
+    "langgraph>=0.0.40",
+    "langsmith>=0.1.0",
+    "langchain-openai>=0.1.0",
+    "./app.py"
   ],
   "graphs": {
     "evaluation": "./app.py:create_evaluation_graph"
@@ -15,4 +16,3 @@
     "LANGCHAIN_PROJECT"
   ]
 }
-
